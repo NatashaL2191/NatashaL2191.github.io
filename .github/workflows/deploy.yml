@@ -96,6 +96,7 @@ jobs:
           bundle exec jekyll build
       - name: Purge unused CSS 🧹
         run: |
+          bash
           npm install -g purgecss
           purgecss -c purgecss.config.js
       - name: Deploy 🚀
